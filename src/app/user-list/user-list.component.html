@@ -1,0 +1,11 @@
+<div>
+  <input type="text" [(ngModel)]="searchTerm" placeholder="Search">
+  <button (click)="searchUsers()">Search</button>
+</div>
+
+<ul>
+  <li *ngFor="let user of users">
+    {{ user.login }}
+  </li>
+</ul>
+
